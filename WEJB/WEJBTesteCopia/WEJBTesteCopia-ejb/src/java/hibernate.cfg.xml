@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+    <property name="hibernate.connection.username">teste</property>
+    <property name="hibernate.connection.password">mack</property>
+    <mapping class="br.com.bean.Pessoa"/>
+    <mapping class="br.com.bean.Onibus"/>
+    <mapping class="br.com.bean.Manutencaoviagem"/>
+    <mapping class="br.com.bean.Manutencaoonibus"/>
+    <mapping class="br.com.bean.Manutencaolinha"/>
+    <mapping class="br.com.bean.Manutencaohorario"/>
+    <mapping class="br.com.bean.Manutencaoassento"/>
+    <mapping class="br.com.bean.Manutecaorota"/>
+    <mapping class="br.com.bean.Funcionario"/>
+    <mapping class="br.com.bean.Endereco"/>
+    <mapping class="br.com.bean.Cartaocredito"/>
+     <mapping class="br.com.bean.Compraanonima"/>
+    <mapping class="br.com.bean.Compracliente"/>
+    </session-factory>
+</hibernate-configuration>
